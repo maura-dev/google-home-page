@@ -6,6 +6,7 @@ html,body{
 	margin: 0;
 	padding: 0;
 	font-size: 13.5px;
+	height:100vh;
 }
 
 .header{
@@ -22,6 +23,12 @@ html,body{
 .header ul li{
 	list-style-type: none;
 	margin:10px;
+}
+
+.header ul li a:hover,
+.main p span: hover,
+.footer-links p:hover{
+	text-decoration:underline;
 }
 
 .header ul li a svg{
@@ -80,10 +87,11 @@ html,body{
 
 .sub-footer{
 	height: 10vh;
-	background-color: silver;
+	background-color:#ffeeee;
 }
 
 .footer{
+	bottom:0;
 	display: flex;
 	flex-direction: row;
 }
