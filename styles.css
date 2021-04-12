@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 *{
 	box-sizing: border-box;
 }
@@ -5,11 +7,11 @@
 html,body{                           
 	margin: 0;
 	padding: 0;
-	font-size: 13.5px;
+	font-size: small;
+	font-family: 'Roboto',sans-serif;
 }
 
 .header{
-	padding:20px;
 	height:5vh;
 }
 
@@ -21,12 +23,23 @@ html,body{
 
 .header ul li{
 	list-style-type: none;
-	margin:10px;
+	margin:0px 10px;
+}
+
+.header ul li a:hover{
+	text-decoration: underline;
+	cursor:pointer;
 }
 
 .header ul li a svg{
 	width:20px;
 	height:20px;
+}
+
+.header ul li a svg:hover{
+	padding:5px;
+	background-color: #dee1e6;
+	border-radius: 50%;
 }
 
  .header ul li:nth-last-child(1){
@@ -35,30 +48,42 @@ html,body{
  	border-radius: 3px;
  	font-size: 15px;
  	color:white;
+ 	margin-top:-10px;
  }
 
  .main{
- 	height: 85vh;
+ 	height: 58.5vh;
  }
 
+
  input{
- 	width:40%;
- 	display: block;
- 	margin:auto;
+ 	width:50%;
  	padding: 10px;
  	border-radius: 50px;
  	outline-style: none;
- 	border:1px solid grey;
+ 	border:1px solid #f1f3f4;
  }
 
-.main div svg{
+ .search-section{
+ 	display: block;
+ 	margin-left: 30%;
+ 	margin-bottom: 20px;
+ }
+
+.search-section svg{
 	width: 20px;
 	height: 20px;
+	margin-right: 45%;
+	padding-top: 5px;
+}
+
+.search-section svg:nth-last-child(2){
+	margin-left: -50%;
 }
 
 .main img{
 	display: block;
-	margin: 20vh auto 0px auto;
+	margin: 20vh auto 20px auto;
 }
 
 .main p{
@@ -69,8 +94,14 @@ html,body{
 .main p span{
 	margin-right:20px; 
 	padding:8px 20px 8px 20px;
-	background-color: #ffeeee;
+	background-color: #f1f3f4;
+	border-radius:5px;
+}
 
+.main p span:hover{
+	box-shadow: :2px 2px 2px 2px #dee1e6;
+	border:2px solid #dee1e6;
+	cursor: pointer;
 }
 
 .main p a{
@@ -78,9 +109,19 @@ html,body{
 	margin-right: 10px;
 }
 
+.main p a:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.down{
+	background-color: #dee1e6;
+}
+
 .sub-footer{
-	height: 10vh;
-	background-color: silver;
+	height: 5vh;
+	padding-top: 1vh;
+	padding-left: 20px;
 }
 
 .footer{
@@ -93,12 +134,18 @@ html,body{
 	flex-direction: row;
 	width:33vw;
 	justify-content: space-around;
-
+	background-color: #dee1e6;
 }
-/*
+
 .footer-links p{
-	margin-right: 10px;
-}*/
+	margin-right: 20px;
+}
+
+.footer-links p:hover,
+.sub-footer p:hover{ 
+	text-decoration: underline;
+	cursor: pointer;
+}
 
 .footer-links p img{
 	width: 15px;
