@@ -145,7 +145,7 @@ html,body{
 .footer-links{
 	display:flex;
 	flex-direction: row;
-	width:33vw;
+	width:32vw;
 	justify-content: space-around;
 	background-color: #dee1f6;
 }
